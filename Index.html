@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        @import url("ten.css");
+
+
+
+
+
+
+        .mynavbar {
+            width: 100%;
+            height: 0px;
+            background-color: aqua;
+            position: absolute;
+            left: 0;
+            box-shadow: inset 0px 0px 5px 7px black;
+            display: flex;
+            visibility: hidden;
+        }
+
+        .mynavbar {
+            display: flex;
+        }
+
+        .css {
+            flex: 1;
+            border: 1px solid pink;
+            width: 100%;
+            height: 100%;
+        }
+
+        .mynavbar>section {
+            flex: 1;
+
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        .nav-item:hover .mynavbar {
+
+            height: 400px;
+            visibility: visible;
+            transition-duration: 1s;
+            display: flex;
+        }
+
+
+
+        #ig {
+            height: 250px;
+            width: 300px;
+        }
+    </style>
+
+
+
+
+
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous"> -->
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" -->
+    <!-- integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous"> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+
+
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous"> -->
+</head>
+
+<body>
+
+    <header class="header" id="main">
+
+        <div class="header-main">
+            <div class="logo">
+                <a href="#"><img src="./img/logoapace.png "></a>
+            </div>
+            <div class="open-nav-menu">
+                <span></span>
+            </div>
+            <div class="menu-overlay">
+            </div>
+
+            <nav class="nav-menu">
+                <div class="close-nav-menu">
+                    <img src="img/close.svg" alt="close">
+                </div>
+                <ul class="menu">
+                    <li class="menu-item menu-item-has-children">
+                        <a href="#" data-toggle="sub-menu">Solutions </a>
+
+
+                    </li>
+                    <li class="menu-item">
+                        <a href="#">Product
+
+
+
+
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#">Resources</a>
+                    </li>
+                    <li class="menu-item menu-item-has-children">
+                        <a href="#" data-toggle="sub-menu">Pricing </a>
+
+
+                    </li>
+                    <li class="menu-item">
+
+                        <button id="ff1" type="button" class="btn btn-primary">Book a call</button> <button id="ff2"
+                            type="button" class="btn btn-primary">Sign up</button>
+
+                    </li>
+
+                </ul>
+            </nav>
+
+        </div>
+
+    </header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- 
+  <div class="container">
+    <header class="d-flex flex-wrap justify-content-center py-3 mb-4">
+      <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+        <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+        <span class="fs-4">Simple header</span>
+      </a>
+
+      <ul class="nav nav-pills">
+        <li class="nav-item"><a href="#" class="nav-link" aria-current="page">Home</a>
+       <div class="mynavbar">
+      
+
+
+            <div class="css">
+                <h1>Company Size</h1><br>
+                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam </p> 
+                <p>SME </p> 
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p><br>
+                <p>Individual</p><br>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+
+
+                
+
+
+
+            </div>
+            <div class="css">
+                
+                <h1>Sector</h1>
+
+
+
+                 <p>Education</p>
+                        <p>Financial Services</p>
+                        <P>Healthcare</P>
+                       <P> HR & Recruitment</P>
+                       <p> Remote Teams</p>
+                        <p>Retail</p>
+                        <p>Sales</p>
+                        <p>See all sectors</p>
+            </div>
+            <div class="css">
+                
+                <h1>Get a Demo</h1>
+
+
+
+                <img  id="ig" src="https://10to8.com/hs-fs/hubfs/Calendar-square.png?width=1000&height=1000&name=Calendar-square.png">
+
+
+              
+
+                       
+                    </div>
+
+
+            <div class="css">
+                
+
+                Do you need a solution to help your business build and grow? <br>
+
+                As one of the most feature-rich appointment scheduling solutions available, you will get value from day 1. Over 200,000 businesses worldwide trust us to enhance and improve their customer experiences. <br>
+
+                We know we can make a difference to your business, today.
+            </div>
+        </div>
+
+
+
+
+ -->
+    <!--         
+        </li>
+        <li class="nav-item"><a href="#" class="nav-link">Features</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">FAQs</a></li>
+        <button type="button" class="btn btn-primary">Primary</button>
+        <button type="button" class="btn btn-primary">Primary</button>
+       
+      </ul>
+    </header>
+
+
+</div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <ul class="sub-menu">
+                            <li class="menu-item"><a href="#">Home 1</a></li>
+                            <li class="menu-item"><a href="#">Home 2</a></li>
+                            <li class="menu-item"><a href="#">Home 3</a></li>
+                            <li class="menu-item"><a href="#">Home 4</a></li>
+                        </ul> -->
+
+
+
+    <!-- <ul class="sub-menu">
+
+                            <li class="menu-item"><a href="#">page 1</a></li>
+                            <li class="menu-item"><a href="#">page 2</a></li>
+                            <li class="menu-item"><a href="#">page 3</a></li>
+                            <li class="menu-item"><a href="#">page 4</a></li>
+                        </ul> -->
+
+
+
+
+
+
+
+
+
+
+    <!-- start -----------Every appointment matters--------- start -->
+
+    <div class="second">
+        <div class="matters">
+            <h1>Every</h1>
+            <h1> appointment </h1>
+            <h1>matters</h1>
+
+            <p>Whether you’re an international organization or solopreneur, 10to8 <br>
+                gives you the power to make appointments happen effectively. <br>
+                Packed with features, it helps grow your business by giving you <br>
+                more time, and scales with you. </p>
+
+            <button id="ff1" type="button" class="btn btn-primary">Get Started</button>
+            <button id="ff2" type="button" class="btn btn-primary">Book a call</button>
+            <img class="imm"
+                src="	https://10to8.com/hs-fs/hubfs/Tags_badge_awards_10to8.png?width=270&name=Tags_badge_awards_10to8.png">
+        </div>
+
+
+        <div class="matters1">
+            <img src="./img/bak.png">
+        </div>
+    </div>
+
+
+    <!-- end -----------Every appointment matters--------- end -->
+
+
+
+
+
+    <div class="container-fluid">
+
+        <div class=" row up ">
+            <div class="mp  col-md-8 col-sm-4 col-lg-6 col-xl-1">
+                <h1>200k</h1>
+                <p>businesses trust 10to8 with their <br> appointments worldwide</p>
+            </div>
+            <div class="mp">
+                <h1>81k</h1>
+                <p>of our surveyed users <br> recommend our software</p>
+            </div>
+            <div class="mp">
+                <h1>100k</h1>
+                <p>features available from <br> scheduling to reminders and <br>reporting</p>
+            </div>
+            <div class="mp">
+                <h1>5000k</h1>
+                <p>integrations including native, <br> Zapier and API</p>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+    <!-- ------------start----------------------from day one----------------------start---------------------------- -->
+
+
+
+
+
+    <div class="one ">
+        <div class="two"> <img src="./img/bak2.png"></div>
+        <div class="two">
+            <p class="cal">A calendar that delivers </p>
+            <p class="cal2"> value from day one</p>
+            <p class="cal1">10to8’s calendar ensures that your time is better spent from your very first <br>
+                online booking through to having a continually full schedule. Whether you’re <br>
+                a solo business owner or a large team working across locations and time <br>
+                zones, 10to8 will handle it. Plus, you can still use synced calendars like <br>
+                Google, iCal, Outlook and more.</p>
+            <button type="button" class="btn btn-primary " id="but">Get Started</button>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <!-------------- end-----------------------from day one -------------------end -------------------------- -->
+
+
+
+
+
+
+
+    <!-- ----------find start ------------------- find start -------------- -->
+    <div class="find">
+        <div class="find1">
+            <h1>Customization you won’t <br> find elsewhere</h1>
+            <p>Have your own online booking page, share your calendar showing available <br>
+                services and much more, 10to8 meets every need. With 100+ powerful <br>
+                features, our appointment scheduling software can be customized perfectly <br>
+                to the way you work.</p>
+
+            <button type="button" class="btn btn-primary " id="find3">Get Started</button>
+        </div>
+        <div class="find2">
+
+
+            <img src="./img/bak3.png">
+        </div>
+    </div>
+
+
+    <!-- ----------find end ------------------- find end -------------- -->
+
+
+
+
+    <div class=" join">
+        <p> Join 200,000 businesses worldwide </p>
+
+    </div>
+
+
+
+    <div class="nhs"> <img src="./img/bakk4.png"> </div>
+
+
+
+
+
+    <div class="ww1">
+        <div class="ww2">
+            <h1>AI that works harder for <br>everyone</h1>
+
+            <p>10to8 is WCAG-compliant, making it accessible by all, and offers <br>
+                appointment scheduling across any channel — online and over the phone. It <br>
+                also sends automated reminders via email, SMS and voice that reduce no- <br>
+                shows by up to 90%. As an AI-powered platform, it gives your customers the <br>
+                ability to make appointments on their terms. </p>
+
+            <button type="button" class="btn btn-primary " id="find3">Get Started</button>
+
+        </div>
+
+        <div class="ww3">
+
+
+            <img src="./img/bak5.png">
+        </div>
+
+    </div>
+
+
+
+
+
+    <div class="as">
+        <h1>Achieve customer experience that’s second to none </h1>
+    </div>
+
+
+
+    <div class="costomer"> <img src="./img/bak7.png"></div>
+
+
+
+
+
+    <div class="btt"> <button type="button" class="btn btn-primary " id="bttb">Start free trial</button></div>
+
+
+
+
+
+    <div class="boo">
+        <div class="boo1"><img src="./img/bak8.png"> </div>
+        <div class="boo2">
+            <h1>Data insights that drive <br>change</h1>
+            <p>10to8 gathers and stores data in compliance with GDPR, HIPAA, CCPA and <br>
+                ISO 27001 for complete peace of mind. Turn this information into actionable <br>
+                insights on bookings, busy times and locations, popular services and staff, <br>
+                and costly no-shows. All of which drive informed decisions that result in <br>
+                higher ROI and revenue.</p>
+            <button type="button" class="btn btn-primary " id="bttt">Get Started</button>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+    <div class="why">
+        <h1>Why 10to8 is trusted worldwide</h1>
+    </div>
+
+
+
+
+
+
+    <div class="shows">
+        <div class="shows1">
+            <p class="pl">Reduces no-shows by <br> up to 90%</p>
+            <p>10to8 sends automated appointment <br>
+                reminders by SMS, email and voice which <br>
+                have been proven to slash no-shows.</p>
+        </div>
+        <div class="shows2">
+            <p class="pl">Eliminates costly admin</p>
+            <p>Think of 10to8 as your super-powered admin <br>
+                assistant. It does it all, freeing precious time <br>
+                previously taken up organizing <br>
+                appointments.</p>
+        </div>
+        <div class="shows3">
+            <p class="pl">Empowers customers</p>
+            <p> Watch appointments soar by giving <br>
+                customers the power to book, reschedule <br>
+                and manage their own appointments 24/7 <br>
+                on any device.</p>
+        </div>
+
+
+    </div>
+
+
+
+
+    <div class="last"> <img src="./img/bak9.png"> </div>
+
+
+    <div class="rol">
+        <div class="rol1">
+            <h1>Find out the ROI of self- <br>
+                service appointments</h1>
+            <p>Calculate the Return on Investment of introducing 10to8 to your business. <br>
+                See the impact on staff workload, no-shows and revenue.</p>
+
+            <button type="button" class="btn bg-success " id="bttt">Get Started</button>
+
+        </div>
+        <div class="rol2"><img src="./img/bak10.png"></div>
+    </div>
+
+
+
+
+
+
+
+
+    <!-- footer section start -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>10 to 8</h4>
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact us </a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Affiliate Programe</a></li>
+                        <li><a href="#">Business Community</a></li>
+                        <li><a href="#">Why 10 to8 </a></li>
+
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Support Centre</a></li>
+                        <li><a href="#">Service Status</a></li>
+                        <li><a href="#">Resources center </a></li>
+                        <li><a href="#">FAQ </a></li>
+
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Product</h4>
+                    <ul>
+                        <li><a href="#"> ROI Caluculator</a></li>
+                        <li><a href="#">App </a></li>
+                        <li><a href="#">Integration</a></li>
+
+                    </ul>
+                </div>
+
+
+
+
+                <div class="footer-col">
+                    <h4>Popular Features</h4>
+                    <ul>
+                        <li><a href="#">Booking Calender</a></li>
+                        <li><a href="#">Online Scheduler </a></li>
+                        <li><a href="#">Appointment Reminder</a></li>
+                        <li><a href="#">Embed Booking Widget</a></li>
+
+
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Compliance</h4>
+                    <ul>
+                        <li><a href="#">Terms</a></li>
+                        <li><a href="#">GDPR </a></li>
+                        <li><a href="#">HIPAA</a></li>
+                        <li><a href="#">CCPA</a></li>
+                        <li><a href="#">ISO 27001</a></li>
+
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+
+    </footer>
+    <!-- footer section end -->
+
+
+
+    <!-- 
+
+
+    <div class="container overflow-hidden  text-center">
+        <div class="row gx-5">
+            <div class="col">
+                <div class="p-3">Custom column padding</div>
+            </div>
+
+
+
+            <div class="col">
+                <div class="p-3">Custom column padding</div>
+            </div>
+        </div>
+    </div>
+ -->
+
+
+
+
+</body>
+
+</html>
